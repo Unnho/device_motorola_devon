@@ -9,6 +9,9 @@ include device/motorola/sm6225-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/devon
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := devon
 
