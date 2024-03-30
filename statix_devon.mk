@@ -11,11 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/devon/device.mk)
 
-# Inherit some common Android stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common StatiX stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
+INCLUDE_PIXEL_LAUNCHER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_devon
+PRODUCT_NAME := statix_devon
 PRODUCT_DEVICE := devon
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g32

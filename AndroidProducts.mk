@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_devon.mk
+    $(LOCAL_DIR)/statix_devon.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_devon-user \
-    aosp_devon-userdebug \
-    aosp_devon-eng
+    statix_devon-user \
+    statix_devon-userdebug \
+    statix_devon-eng

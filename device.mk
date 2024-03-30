@@ -7,6 +7,10 @@
 # Inherit from sm6225-common
 $(call inherit-product, device/motorola/sm6225-common/bengal.mk)
 
+# Platform
+PRODUCT_BOARD_PLATFORM := bengal
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -33,7 +37,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-statix
 
 # Permissions
 PRODUCT_COPY_FILES += \
