@@ -11,6 +11,12 @@ $(call inherit-product, device/motorola/sm6225-common/bengal.mk)
 PRODUCT_BOARD_PLATFORM := bengal
 PRODUCT_USES_QCOM_HARDWARE := true
 
+# Kernel
+TARGET_KERNEL_DIR ?= device/motorola/devon-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/kernel
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 

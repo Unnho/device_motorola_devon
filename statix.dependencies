@@ -5,5 +5,11 @@
         "target_path":  "device/motorola/sm6225-common",
         "revision":     "statix"
     }
+    {
+        "remote":       "github",
+        "repository":   "SM6225-Project/kernel_motorola_devon",
+        "target_path":  "kernel/motorola/devon",
+        "revision":     "statix"
+    },
 ]
 

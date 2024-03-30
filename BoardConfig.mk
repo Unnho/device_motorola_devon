@@ -32,7 +32,9 @@ ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/statix/config/device_framework_matrix.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/ext_config/devon-default.config
+TARGET_NO_KERNEL := false
+BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)
+BOARD_PREBUILT_DTBOIMAGE := $(BOARD_PREBUILT_DTBIMAGE_DIR)/dtbo.img
 
 # Kernel Modules - Vendor Boot
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/vendor_boot.modules.load))
