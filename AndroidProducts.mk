@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/statix_devon.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_devon-user \
-    statix_devon-userdebug \
-    statix_devon-eng
+    statix_devon-up1a-user \
+    statix_devon-up1a-userdebug \
+    statix_devon-up1a-eng
