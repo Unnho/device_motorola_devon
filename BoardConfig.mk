@@ -1,8 +1,3 @@
-#
-# Copyright (C) 2022-2023 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
 
 # Inherit from sm6225-common
 include device/motorola/sm6225-common/BoardConfigCommon.mk
