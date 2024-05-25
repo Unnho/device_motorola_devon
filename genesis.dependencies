@@ -3,7 +3,7 @@
         "remote":       "github",
         "repository":   "SM6225-Project/device_motorola_sm6225-common",
         "target_path":  "device/motorola/sm6225-common",
-        "revision":     "Fourteen"
+        "revision":     "genesis"
     }
 ]
 
